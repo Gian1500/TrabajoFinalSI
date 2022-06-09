@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Hola</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col-12 table-responsive">
+            <h2>Datos</h2>          
+            <button id="boton" type="submit" class="btn btn-success" >Mostrar</button>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Año</th>
+                    <th scope="col">Mes</th>
+                    <th scope="col">Pais</th>
+                    <th scope="col">Unidad medida</th>
+                    <th scope="col">Precio Maiz</th>
+                    <th scope="col">Precio Caña</th>
+                    <th scope="col">Produccion Maiz</th>
+                    <th scope="col">Produccion Caña</th>
+                    <th scope="col">Produccion Total</th>
+                    <th scope="col">Ganancias Maiz</th>
+                    <th scope="col">Ganancias Caña</th>
+                    <th scope="col">Clasificacion Maiz</th>
+                    <th scope="col">Clasificacion Caña</th>
+                    <th scope="col">Mejor Produccion</th>
+                    
+                  </tr>
+                </thead>
+                <tbody id="tabla">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6">
+        <h2 class="">Predicción</h2>
+        <form>
+            <div class="mb-3">
+                <label for="" class="form-label">Ganancia Caña</label>
+                <input type="email" class="form-control" id="" aria-describedby="">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Ganancia Maiz</label>
+                <input type="email" class="form-control" id="" aria-describedby="">
+            </div>
+            
+
+            <button type="submit" class="btn btn-primary">Predecir</button>
+            <button type="reset" class="btn btn-danger">Borrar</button>
+            </form>
+        </div>
+        <div class="col-6">
+            <h2>Resultados</h2>
+            <h3>Predicción</h3>
+            <h4 id="resultado"></h4>
+           
+        </div>
+         <div class="col-12">
+            <h2>Entrenamiento</h2>
+            <h3>Entradas</h3>    
+           
+            <h4 id="tablaRes">
+                            
+            </h4>
+
+            <h3>Salidas Esperadas</h3>
+            <h4>[0]
+                [1]
+                [1]
+                [1]
+            </h4>
+        </div>
+        </div>
+    </div>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="ajax.js"></script>
+    <script src="tensor.js"></script>
+</body>
+</html>

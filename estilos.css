@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: rgba(248, 234, 204, 0.842); */
+    background: linear-gradient(rgb(250, 212, 129), rgb(231, 167, 29)); 
+}
+
+.container{
+    margin-top: 2%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(rgb(196, 247, 252), rgb(167, 211, 252)); 
+}
+
+.col-6{
+    border: 1px groove black;
+    padding: 2%;
+    text-align: center;
+}
+
+.col-12{
+    border: 1px groove black;
+    text-align: center;
+}
+
