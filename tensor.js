@@ -59,8 +59,6 @@ async function createModel() {
 
     let entrenamiento= document.getElementById('tablaRes')
     entrenamiento.innerText=`${entradas}`
-    let entrenamiento2= document.getElementById('tablaRes2')
-    entrenamiento2.innerText=`${salidaEsperada}`
    
 
 
